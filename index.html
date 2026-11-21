@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Live Mississauga Weather</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+
+        <header class="topbar">
+
+            <div class="brand">
+                <span class="brand-icon">☁</span>
+                <span>GTA WEATHER</span>
+            </div>
+
+            <div class="header-right">
+                <span class="live-indicator">
+                    <span class="pulse"></span>
+                    LIVE DATA
+                </span>
+                <button id="refreshBtn" class="refresh-btn">
+                    ↻ Refresh
+                </button>
+            </div>
+
+        </header>
+
+        <!-- Hero -->
+        <section class="hero">
+
+            <div class="hero-content">
+                <p class="eyebrow">ONTARIO, CANADA</p>
+                <h1>Mississauga</h1>
+                <p class="date" id="currentDate">Loading date...</p>
+
+                <div class="weather-main">
+                    <div class="weather-icon" id="weatherIcon">
+                        ☁️
+                    </div>
+
+                    <div>
+                        <div class="temperature">
+                            <span id="temperature">--</span><span class="degree">°</span>
+                        </div>
+
+                        <p class="condition" id="condition">Retrieving weather...</p>
+
+                        <p class="feels-like">Feels like <span id="feelsLike">--</span>°C</p>
+                    </div>
+
+                </div>
+
+                <p class="weather-summary" id="weatherSummary">Connecting to Environment Canada...</p>
+
+            </div>
+
+            <div class="hero-decoration">
+                <div class="sun"></div>
+                <div class="cloud cloud-one"></div>
+                <div class="cloud cloud-two"></div>
+            </div>
+
+        </section>
+
+
+        <!-- Overview -->
+        <section class="weather-details">
+
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">WEATHER CONDITIONS</p>
+                    <h2>Today's Overview</h2>
+                </div>
+            </div>
+
+            <div class="details-grid">
+
+                <!-- Wind -->
+                <article class="detail-card">
+                    <div class="detail-top">
+                        <span>💨</span>
+                        <p>Wind Speed</p>
+                    </div>
+                    <h3 id="windSpeed">--</h3>
+                    <small id="windDirection">
+                        Direction unavailable
+                    </small>
+                </article>
+
+                <!-- HUMIDITY -->
+                <article class="detail-card">
+                    <div class="detail-top">
+                        <span>💧</span>
+                        <p>Humidity</p>
+                    </div>
+                    <h3 id="humidity">--</h3>
+                    <small>Relative humidity</small>
+
+                </article>
+
+                <!-- PRESSURE -->
+                <article class="detail-card">
+                    <div class="detail-top">
+                        <span>🌡️</span>
+                        <p>Pressure</p>
+                    </div>
+                    <h3 id="pressure">--</h3>
+                    <small>Atmospheric pressure</small>
+                </article>
+
+
+                <!-- DEW POINT -->
+                <article class="detail-card">
+                    <div class="detail-top">
+                        <span>🌧️</span>
+                        <p>Dew Point</p>
+                    </div>
+                    <h3 id="dewPoint">--</h3>
+                    <small>Current dew point</small>
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Insight -->
+        <section class="weather-message" id="weatherMessage">
+
+            <div class="message-icon">🌤️</div>
+            <div>
+                <p class="eyebrow">WEATHER INSIGHT</p>
+                <h3>Checking Mississauga's weather...</h3>
+                <p id="insightText">Your daily weather insight will appear here.</p>
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div>
+                <small id="lastUpdated">
+                    Last updated: Waiting for data
+                </small>
+                <small>
+                    Data source:
+                    <a href="https://weather.gc.ca/en/location/index.html?coords=43.59,-79.66" target="_blank" rel="noopener noreferrer">
+                        Environment Canada ↗
+                    </a>
+                </small>
+            </div>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
