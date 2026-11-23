@@ -38,11 +38,6 @@ body {
     gap: 10px;
 }
 
-.brand-icon {
-    color: #527e9c;
-    font-size: 22px;
-}
-
 .header-right {
     display: flex;
     align-items: center;
